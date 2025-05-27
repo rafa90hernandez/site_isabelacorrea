@@ -1,0 +1,49 @@
+@charset  "UTF-8";
+
+body {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-image: linear-gradient(to right, #FFFFFF, #EA8498);
+}
+
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+#contato {
+    background-image: url('imagens/detailed_hand_painted_pink_watercolour_background_0509.jpg');
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+#contato > div {
+    background-color: white;
+    margin: 20px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #FFFFFF, #EA8498);
+}
+
+footer > p {
+    margin: 0%;
+}
