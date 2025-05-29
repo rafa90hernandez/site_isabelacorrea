@@ -17,9 +17,9 @@ header > h1 {
     transform: translate(-200px, -60px);
 }
 
-#fundo > picture {
-    display: flex;
+picture {
 
+    width: 10px;
 }
 
 .logo {
