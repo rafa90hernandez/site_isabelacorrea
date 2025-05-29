@@ -1,15 +1,26 @@
 @charset  "UTF-8";
 
 body {
-    margin: 0px;
+    margin: auto;
 }
 
 header {
-    display: flex;
     padding: 10px;
     background-image: linear-gradient(to right, #FFFFFF, #EA8498);
+    position: relative;
 }
 
+header > h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-200px, -60px);
+}
+
+#fundo > picture {
+    display: flex;
+
+}
 
 .logo {
     width: 200px;
@@ -20,9 +31,15 @@ nav {
     font-size: 1.2em;
 }
 
-#contato {
+#sobre {
+    display: flex;
+    margin: auto;
+}
+
+#atendimento {
+    background-color: #EA8498;
     background-image: url('imagens/detailed_hand_painted_pink_watercolour_background_0509.jpg');
-    width: 100%;
+    background-size: cover;
     height: 300px;
     display: flex;
     padding: 0px;
@@ -30,16 +47,21 @@ nav {
     margin: 0px;
 }
 
-#contato > div {
+#atendimento > div {
     background-color: white;
-    margin: 20px;
-    width: 50%;
-    height: 50%;
+    margin: auto;
+    padding: 10px;
     text-align: center;
-    align-items: center;
+    border-radius: 20px;
+}
+
+#contato > img, p {
+    display: flexbox;
+    text-align: center;
 }
 
 footer {
+    margin: auto;
     text-align: center;
     background-image: linear-gradient(to right, #FFFFFF, #EA8498);
 }
