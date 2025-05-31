@@ -22,7 +22,7 @@ header > h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-200px, -60px);
+    transform: translate(-250px, -60px);
     font-family: var(--font1);
     font-size: 3.5em;
     font-weight: normal;
@@ -80,6 +80,7 @@ section#fundo{
     padding: 100px;
     border: 0px;
     margin: auto;
+
 }
 
 #atendimento > div {
@@ -88,6 +89,7 @@ section#fundo{
     padding: 100px;
     text-align: center;
     border-radius: 20px;
+
 }
 
 #contato {
