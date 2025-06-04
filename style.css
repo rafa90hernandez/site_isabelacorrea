@@ -1,9 +1,10 @@
-@charset  "UTF-8";
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
 
 :root {
-    --font1: "Babylonica", cursive;;
+    --font1: "Babylonica", cursive;
+    ;
 }
 
 * {
@@ -12,49 +13,81 @@
 }
 
 header {
-    padding: 10px;
-    background-image: linear-gradient(to right, #FFFFFF, #EA8498);
     position: relative;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    background-image: linear-gradient(to right, #FFFFFF, #EA8498);
+    flex-wrap: wrap;
 }
 
-header > h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-250px, -60px);
+header .branding {
     font-family: var(--font1);
-    font-size: 3.5em;
-    font-weight: normal;
+    font-weight: 100px;
+    font-size: clamp(2rem, 2vw, 4rem);
     color: #B22D93;
+    text-align: center;
 }
 
-header > nav a {
+nav {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+}
+
+
+header>nav a {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
+    color: white;
     text-decoration: none;
+    text-shadow: 0.5px 0.5px 0.5px black;
     font-size: 1.2em;
-    color: #FFFFFF;
+    padding: 0.5em 0.5em;
+    margin-right: 10px;
+    font-weight: bold;
 }
 
-#fundo {
-    padding-top: 10px;
-}
-
-header > nav a:hover {
+header>nav a:hover {
     background-color: #b22d9379;
     padding: 0.5em 0.5em 0em 0.5em;
     border-radius: 2px 2px 0px 2px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.221);
 }
 
-.logo {
-    width: 250px;
+.branding {
+    display: flex;
+    align-items: center;
+    gap: clamp(0px, 10vw, 200px);
 }
 
-nav {
+
+#fundo {
+    padding-top: 10px;
+}
+
+article {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: white;
+}
+
+.texto-posicionado {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-width: 400px;
     text-align: right;
-    font-size: 1.2em;
+}
+
+.logo {
+    width: 220px;
 }
 
 #sobre {
@@ -62,13 +95,13 @@ nav {
     margin: auto;
 }
 
-section#fundo{
+section#fundo {
     width: 100%;
     height: 100vh;
     background-size: 100%;
-    background-image: url('imagens/foto_fundog.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url('imagens/foto_fundog.jpeg');
     background-repeat: no-repeat;
-    opacity: 70%;
+    position: relative;
 }
 
 #atendimento {
@@ -80,16 +113,14 @@ section#fundo{
     padding: 100px;
     border: 0px;
     margin: auto;
-
 }
 
-#atendimento > div {
+#atendimento>div {
     background-color: white;
     margin: auto;
     padding: 100px;
     text-align: center;
     border-radius: 20px;
-
 }
 
 #contato {
@@ -105,7 +136,7 @@ footer {
     background-image: linear-gradient(to right, #FFFFFF, #EA8498);
 }
 
-footer > p {
+footer>p {
     margin: 0%;
 
 }
