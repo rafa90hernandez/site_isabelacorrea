@@ -148,7 +148,7 @@ section#fundo {
     background-color: #EA8498;
     background-image: url('imagens/detailed_hand_painted_pink_watercolour_background_0509.jpg');
     background-size: cover;
-    height: 300px;
+    height: 1000px;
     display: flex;
     padding: 100px;
     border: 0px;
@@ -156,55 +156,75 @@ section#fundo {
     background-attachment: fixed;
 }
 
-#atendimento > div {
+#atendimento>div {
     margin: auto;
 }
 
-.bloco {
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.box {
     background-color: white;
-    width: 350px;
-    height: 380px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.055);
-    margin-right: 20px;
-    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    min-width: 200px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 600px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    flex: 1 1 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.topo {
-        display: flex;
-        padding: 20px;
+.topo-box {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 10px;
 }
 
-.topo > h2 {
-    padding-top: 30px;
-    width: 200px;
+.topo-box img {
+    width: 80px;
+    height: auto;
 }
 
-.topo > img {
-    width: 70px;
-    height: 70px;
+.topo-box h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.text1 {
-    margin: 0 auto;
-    padding: 0 20px;
+.box p,
+.box ul {
+    margin-top: 50px;
     text-align: justify;
+    line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.3;
-    font-size: 17px;
 }
 
-.text2 > p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    font-size: 17px;
-    margin-bottom: 5px;
-    padding: 0px 10px 0px 10px;
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        max-width: 90%;
+    }
 }
 
 #contato {
     text-align: center;
+    height: 600px;
+}
 
+.divContatos {
+
+    text-align: center;
     padding: 50px 0px 50px 0px;
 }
 
