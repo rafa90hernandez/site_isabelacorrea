@@ -239,3 +239,106 @@ footer>p {
     margin: 0%;
 
 }
+
+/* ===========================
+   RESPONSIVIDADE MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .branding {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    article {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .texto-posicionado {
+        position: static;
+        bottom: auto;
+        right: auto;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sobre>picture {
+        padding: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .sobre>p {
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    #atendimento {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 10px;
+        background-attachment: scroll;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box {
+        width: 90%;
+        padding: 20px;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .topo-box {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .topo-box img {
+        width: 50px;
+    }
+
+    #contato {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .divContatos img {
+        width: 50px;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
