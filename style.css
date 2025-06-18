@@ -117,7 +117,9 @@ section#fundo {
 #quemSou {
     text-align: center;
     padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
+    font-size: 2em;
+    color: #B22D93
 }
 
 .sobre {
@@ -154,17 +156,22 @@ section#fundo {
     background-color: #EA8498;
     background-image: url('imagens/detailed_hand_painted_pink_watercolour_background_0509.jpg');
     background-size: cover;
-    height: 1000px;
-    display: flex;
+    height: 100%;
     padding: 100px;
     border: 0px;
     margin: auto;
     background-attachment: fixed;
 }
 
-#atendimento>div {
-    margin: auto;
+#atendimento h2 {
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 4em;
+    color: #B22D93;
+    margin-bottom: 100px;
+    margin-top: 10px;
 }
+
 
 #contato {
     font-family: Arial, Helvetica, sans-serif;
@@ -175,7 +182,7 @@ section#fundo {
     gap: 50px;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 0px;
 }
 
 .box {
@@ -184,7 +191,7 @@ section#fundo {
     padding: 40px;
     min-width: 200px;
     min-height: 400px;
-    max-width: 400px;
+    max-width: 500px;
     max-height: 600px;
     font-size: clamp(1rem, 2vw, 1.5rem);
     flex: 1 1 300px;
@@ -195,7 +202,7 @@ section#fundo {
     display: flex;
     align-items: center;
     gap: 80px;
-    margin-bottom: 10px;
+
 }
 
 .topo-box img {
@@ -220,11 +227,11 @@ section#fundo {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: -30px;
 }
 
 .icones-contato a img {
-    width: 50px;
+    width: 60px;
     height: auto;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -235,8 +242,8 @@ section#fundo {
 }
 
 #contato h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
+    font-family: var(--font2);
+    font-size: 3em;
     margin-bottom: 20px;
     color: #B22D93;
 }
@@ -244,13 +251,14 @@ section#fundo {
 #contato {
     margin-top: 50px;
     text-align: center;
-    height: 600px;
+    height: 200px;
 }
 
 .divContatos {
     text-align: center;
     padding: 50px 0px 50px 0px;
 }
+
 
 footer {
     padding: 10px;
@@ -259,9 +267,14 @@ footer {
     background-image: linear-gradient(to right, #FFFFFF, #EA8498);
 }
 
-footer>p {
+footer>p, a {
     margin: 0%;
+    text-decoration: none;
+    color: black;
+}
 
+.link:hover {
+    color: blue;
 }
 
 /* ===========================
