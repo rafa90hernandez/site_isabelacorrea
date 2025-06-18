@@ -118,7 +118,7 @@ section#fundo {
     text-align: center;
     padding: 30px;
     font-family: var(--font2);
-    font-size: 2em;
+    font-size: clamp(1.8rem, 2vw, 4rem);
     color: #B22D93
 }
 
@@ -166,7 +166,7 @@ section#fundo {
 #atendimento h2 {
     text-align: center;
     font-family: var(--font2);
-    font-size: 4em;
+    font-size: clamp(3.5rem, 2vw, 8rem);
     color: #B22D93;
     margin-bottom: 100px;
     margin-top: 10px;
