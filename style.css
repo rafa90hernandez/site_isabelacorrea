@@ -267,7 +267,8 @@ footer {
     background-image: linear-gradient(to right, #FFFFFF, #EA8498);
 }
 
-footer>p, a {
+footer>p,
+a {
     margin: 0%;
     text-decoration: none;
     color: black;
@@ -343,6 +344,14 @@ footer>p, a {
         margin-bottom: 20px;
         width: 80%;
     }
+
+    .sobre picture img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
 
     .sobre>p {
         padding: 0 10px;
