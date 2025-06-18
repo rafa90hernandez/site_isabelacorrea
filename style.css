@@ -16,6 +16,10 @@
     margin: 0px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     position: relative;
     display: flex;
@@ -267,10 +271,17 @@ footer>p {
     }
 
     article {
-        height: auto;
-        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         text-align: center;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 20px;
+        height: auto;
     }
+
 
     .texto-posicionado {
         position: static;
