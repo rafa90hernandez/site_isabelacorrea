@@ -252,7 +252,8 @@ footer>p {
 
     * {
         padding: 0px;
-        margin: auto;
+        margin: 0px;
+        box-sizing: border-box;
     }
 
 
@@ -281,13 +282,16 @@ footer>p {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        text-align: center;
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;
-        padding: 20px;
+        padding: 20px 0;
         height: auto;
+        min-width: auto;
+        background-attachment: scroll;
+        box-sizing: border-box;
     }
+
 
 
     .texto-posicionado {
