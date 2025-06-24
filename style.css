@@ -35,7 +35,7 @@ header {
 header .branding {
     font-family: var(--font4);
     font-weight: 100px;
-    font-size: clamp(1.8rem, 2vw, 4rem);
+    font-size: clamp(1.6rem, 2vw, 4rem);
     color: #B22D93;
     text-align: center;
 
