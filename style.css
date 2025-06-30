@@ -30,7 +30,7 @@ header {
 header .branding {
     font-family: var(--font1);
     font-weight: 100px;
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.4rem, 2vw, 2rem);
     color: #B22D93;
     text-align: center;
     text-shadow: 5px 5px 5px #b22d932c;
