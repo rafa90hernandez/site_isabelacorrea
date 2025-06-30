@@ -44,6 +44,7 @@ header .branding {
 .logo>img {
     width: 200px;
     height: auto;
+    padding-left: 30px;
 }
 
 nav {
@@ -289,6 +290,28 @@ a {
 .link:hover {
     color: blue;
 }
+
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 24px;
+    background-color: #b22d93dd;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    display: none; 
+    transition: 0.3s;
+}
+
+#btnTopo:hover {
+    background-color: #912377;
+}
+
 
 /* ===========================
    RESPONSIVIDADE MOBILE
