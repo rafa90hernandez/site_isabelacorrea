@@ -37,9 +37,8 @@ header .branding {
 }
 
 .logo>img {
-    width: 200px;
+    width: 150px;
     height: auto;
-    padding-left: 30px;
 }
 
 nav {
@@ -57,7 +56,7 @@ header>nav a {
     color: white;
     text-decoration: none;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 0.5em 0.5em;
     margin-right: 10px;
     font-weight: bold;
@@ -80,7 +79,7 @@ article {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    font-size: clamp(1rem, 3vw, 2.2rem);
+    font-size: clamp(1rem, 3vw, 1.8rem);
     color: white;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url('imagens/foto_fundog.jpeg');
     background-size: cover;
@@ -107,7 +106,7 @@ article {
     text-align: center;
     padding: 30px;
     font-family: var(--font2);
-    font-size: clamp(1.8rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     color: #B22D93;
     text-shadow: 5px 5px 5px #b22d9324;
 }
@@ -156,7 +155,7 @@ article {
 #atendimento h2 {
     text-align: center;
     font-family: var(--font2);
-    font-size: clamp(3.5rem, 2vw, 8rem);
+    font-size: clamp(3.5rem, 2vw, 6rem);
     color: #B22D93;
     text-shadow: 5px 5px 5px #b22d9324;
     margin-bottom: 100px;
@@ -179,7 +178,7 @@ article {
     min-height: 400px;
     max-width: 400px;
     max-height: 600px;
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: clamp(1rem, 1vw, 1.0rem);
     flex: 1 1 300px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
@@ -204,6 +203,7 @@ article {
 .topo-box h3 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+margin-left: -30px;
 }
 
 .box p,
@@ -234,7 +234,7 @@ article {
 
 #contato h2 {
     font-family: var(--font2);
-    font-size: 3em;
+    font-size: clamp(2.5rem, 2vw, 8rem);
     margin-bottom: 20px;
     color: #B22D93;
     text-shadow: 5px 5px 5px #b22d9324;
@@ -344,7 +344,7 @@ a {
         bottom: auto;
         right: auto;
         text-align: center;
-        font-size: clamp(1.8rem, 3vw, 3rem);
+        font-size: clamp(1.5rem, 3vw, 3rem);
         margin: 380px 10px 10px 10px;
     }
 
