@@ -33,12 +33,17 @@ header {
 }
 
 header .branding {
-    font-family: var(--font4);
+    font-family: var(--font1);
     font-weight: 100px;
-    font-size: clamp(1.8rem, 2vw, 4rem);
+    font-size: clamp(1.6rem, 2vw, 2rem);
     color: #B22D93;
     text-align: center;
-    text-shadow: 5px 5px 5px #b22d9324;
+    text-shadow: 5px 5px 5px #b22d935c;
+}
+
+.logo>img {
+    width: 200px;
+    height: auto;
 }
 
 nav {
@@ -55,7 +60,7 @@ header>nav a {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: none;
-    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.388);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 1.2em;
     padding: 0.5em 0.5em;
     margin-right: 10px;
@@ -63,13 +68,13 @@ header>nav a {
 }
 
 header>nav a:hover {
-    color: #ab5d99;
+    color: #912377;
 }
 
 .branding {
     display: flex;
     align-items: center;
-    gap: clamp(0px, 10vw, 150px);
+    gap: clamp(0px, 10vw, 200px);
 }
 
 
@@ -83,13 +88,13 @@ article {
     width: 100%;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: clamp(1rem, 3vw, 2.2rem);
     color: white;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url('imagens/foto_fundog.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 section#fundo {
@@ -98,9 +103,6 @@ section#fundo {
 
 
 .texto-posicionado {
-    font-family: var(--font2);
-    font-size: 2.5em;
-    text-shadow: 2px 2px 2px black;
     position: absolute;
     bottom: 80px;
     right: 80px;
@@ -111,8 +113,7 @@ section#fundo {
 }
 
 .texto-posicionado:hover {
-    background-color: rgba(0, 0, 0, 0.341);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.129);
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -120,7 +121,7 @@ section#fundo {
     text-align: center;
     padding: 30px;
     font-family: var(--font2);
-    font-size: clamp(1.8rem, 2vw, 4rem);
+    font-size: clamp(1.8rem, 2vw, 2rem);
     color: #B22D93;
     text-shadow: 5px 5px 5px #b22d9324;
 }
@@ -144,7 +145,7 @@ section#fundo {
 
 .sobre>p {
     padding-right: 50px;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: justify;
@@ -194,12 +195,17 @@ section#fundo {
     border-radius: 10px;
     padding: 40px;
     min-width: 200px;
-    min-height: 500px;
-    max-width: 500px;
-    max-height: 700px;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 600px;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     flex: 1 1 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    box-shadow: 4px 4px 4px #EA8498;
+
 }
 
 .topo-box {
@@ -335,7 +341,7 @@ a {
         bottom: auto;
         right: auto;
         text-align: center;
-        font-size: 2em;
+        font-size: clamp(1.8rem, 3vw, 3rem);
         margin: 380px 10px 10px 10px;
     }
 
